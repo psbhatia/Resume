@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Parampreet Bhatia - Resume
+% 7/26/2016
+%
+% Reference:
+% Debarghya Das (http://debarghyadas.com)
+
+\documentclass[]{hieudo-build}
+
+\usepackage{xcolor}
+\definecolor{myblue}{RGB}{191, 192, 192}
+\definecolor{myyellow}{RGB}{239, 131, 84}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\color{myyellow}\namesection{Parampreet }
+{\urlstyle{same}
+	\color{myblue}\faEnvelope \href{mailto:psbhatia@uwaterloo.ca}{ psbhatia@uwaterloo.ca}\\
+	\faGithub \href{https://github.com/psbhatia}{   github.com/psbhatia}\\
+	\faLinkedinSquare \href{https://www.linkedin.com/in/psbhatia26}{   linkedin.com/psbhatia26}
+}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.34\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+
+\subsection{University of Waterloo}
+\descript{3A Computer Engineering}
+Bachelor of Applied Sciences \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+% \subsection{Programming}
+\location{Languages:}
+Java, C, C++, JavaScript\\ 
+
+\location{Frameworks:}
+Play, Spring Boot\\
+JUnit, Mockito\\
+
+\location{Databases:}
+SQL, MongoDB\\
+
+\location{Others:}
+Git, Perforce \\
+Unix, Vim \\ 
+Agile, AWS \\ 
+Docker, Swagger \\
+
+% \sectionsep
+% \subsection{Languages}
+% \location{Native fluency:} English, Vietnamese\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+Data Structure \\
+Algorithms \\
+Concurrency \\
+Systems Programming \\
+Compilers \\
+Object-Oriented Programming\\
+Embedded Systems \\
+Prototyping  \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ADDITIONAL INFORMATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Leadership}
+\subsection{Warrior Home Design Team}
+Electrical lead \\
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     AWARDS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+President’s Scholarship on Admission\\
+\sectionsep
+
+\section{Hobbies} 
+Soccer\\
+Film \\
+Weight Training \\
+\sectionsep
+
+\sectionsep
+\DTMsetdatestyle{mylastupdate}
+\DTMdisplaydate{\the\year}{\the\month}{\the\day}{-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\workplace{Insticator}{Jan 2020 – Apr 2020}\\
+\color{myyellow}\position{Backend Developer}{Kitchener, ON}
+\vspace{0.9em} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Optimized large revenue excel sheets (100mb+) processing using file streaming to prevent memory exceptions
+\item Implemented a maven repository and slackbot to report business exceptions
+\item Integrated numerous third party APIs and carried out SQL migrations on Play \& Spring Boot applications
+\end{tightemize}
+\sectionsep
+
+\workplace{OpenText}{May 2019 – Aug 2019} \\
+\position{Software Developer}{Waterloo, ON}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Set up RESTful APIs for numerous features including search and pagination 
+\item Optimized APIs to allow for upto 30\% faster webpage loading
+\item  Structured a new unit testing library, correcting and enhancing the existing one
+\end{tightemize}
+\sectionsep
+
+\workplace{Oracle Eloqua }{May 2018 – Aug 2018} \\
+\position{Software Developer in Test}{Toronto, ON}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Automated black box testing for multiple RESTful services using JUnit
+\item Built a UI testing framework from ground up using Selenium covering 25\% of the app
+\end{tightemize}
+\sectionsep
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\runsubsection{Image Repository}
+\descript{}
+Created a spring application that can upload, download and search for images on an AWS S3 bucket
+\sectionsep 
+
+\runsubsection{Multi Threaded Web Crawler}
+\descript{}
+Built a web crawler in C that finds PNG images, downloads and stitches them for concurrency course
+\sectionsep
+
+\runsubsection{Tempus Fugit}
+\descript{}
+Designed a javascript Chrome extension that would track time spent by a user on a specified list of websites
+\sectionsep 
+
+
+\end{minipage} 
+
+\end{document}  
