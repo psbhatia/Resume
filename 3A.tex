@@ -48,7 +48,7 @@ Bachelor of Applied Sciences \\
 \section{Skills}
 % \subsection{Programming}
 \location{Languages:}
-Java, C, \\ 
+Java, C, Python\\ 
 
 \location{Frameworks:}
 Play, Spring Boot\\
@@ -110,13 +110,23 @@ Object-Oriented Programming\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
 
+\workplace{Buckzy Payments}{Sep 2020 – Dec 2020}\\
+\color{myyellow}\position{Backend Developer}{Toronto, ON}
+\vspace{0.9em} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Added 3 countries to our payment network by building microservices to integrate their payment network with ours
+\item Set up and deployed Elasticsearch, Logstash and Kibana alert service for catching business exceptions using Kafka as a messaging system
+\item Implemented a querying service to check the processing status of payments with partner payment gateways
+\end{tightemize}
+\sectionsep
+
 \workplace{Insticator}{Jan 2020 – Apr 2020}\\
 \color{myyellow}\position{Backend Developer}{Kitchener, ON}
 \vspace{0.9em} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Optimized large revenue excel sheets (100mb+) processing using file streaming to prevent memory exceptions
-\item Implemented a maven repository and slackbot to report business exceptions
-\item Integrated numerous third party APIs and carried out SQL migrations on Play \& Spring Boot applications
+\item Refactored processing of exceptionally large CSV files (1,000,000+ entries) using streaming libraries to increase performance and avoid memory exceptions
+\item Created a new maven repository to integrate slack and business exceptions for faster reporting of issues to the engineering team
+\item Integrated multiple third party SSP reporting APIs to support the teams revenue reporting process
 \end{tightemize}
 \sectionsep
 
@@ -124,9 +134,9 @@ Object-Oriented Programming\\
 \position{Software Developer}{Waterloo, ON}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Set up RESTful APIs for numerous features including search and pagination 
-\item Optimized APIs to allow for upto 30\% faster webpage loading
-\item  Structured a new unit testing library, correcting and enhancing the existing one
+\item Reduced web page loading times by implementing pagination and optimizing number of API calls 
+\item Implemented querying logic on very large datasets with a focus on effeciency
+\item  Increased test coverage by 20\% by structuring and implementing a new unit testing library
 \end{tightemize}
 \sectionsep
 
