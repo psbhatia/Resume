@@ -24,86 +24,18 @@
 	\faGithub \href{https://github.com/psbhatia}{   github.com/psbhatia}\\
 	\faLinkedinSquare \href{https://www.linkedin.com/in/psbhatia26}{   linkedin.com/psbhatia26}
 }
-    
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{minipage}[t]{0.34\textwidth}
+
+\begin{minipage}[t]{1.0\textwidth} 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education} 
-
-\subsection{University of Waterloo}
-\descript{3A Computer Engineering}
-Bachelor of Applied Sciences \\
-\sectionsep
+\section{EDUCATION}
+\workplace{University of Waterloo}{}\\
+\color{myyellow}\position{Bachelor of Applied Sciences, Computer Engineering }{Term 3B}
+\vspace{0.9em} % Hacky fix for awkward extra vertical space
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Skills}
-% \subsection{Programming}
-\location{Languages:}
-Java, C, Python\\ 
-
-\location{Frameworks:}
-Play, Spring Boot\\
-JUnit, Mockito\\
-
-\location{Databases:}
-SQL, MongoDB\\
-
-\location{Others:}
-Git, Perforce \\
-Unix, Vim \\ 
-Agile, AWS \\ 
-Docker, Swagger \\
-
-% \sectionsep
-% \subsection{Languages}
-% \location{Native fluency:} English, Vietnamese\\
-\sectionsep
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Coursework}
-Data Structure \\
-Algorithms \\
-Concurrency \\
-Systems Programming \\
-Compilers \\
-Object-Oriented Programming\\
-
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     ADDITIONAL INFORMATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %     AWARDS
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\sectionsep
-\DTMsetdatestyle{mylastupdate}
-\DTMdisplaydate{\the\year}{\the\month}{\the\day}{-1}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.65\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
@@ -114,19 +46,21 @@ Object-Oriented Programming\\
 \color{myyellow}\position{Backend Developer}{Toronto, ON}
 \vspace{0.9em} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Added 3 countries to our payment network by building microservices to integrate their payment network with ours
-\item Set up and deployed Elasticsearch, Logstash and Kibana alert service for catching business exceptions using Kafka as a messaging system
-\item Implemented a querying service to check the processing status of payments with partner payment gateways
+\item Developed two new Spring Boot Microservices from ground up to integrate partner payment gateways 
+\item Set up and deployed Elasticsearch, Logstash and Kibana logging system for multiple services
+\item Responsible for triaging issues across multiple services and setting up a system to alert developers when these happen using Kafka messages
+\item Worked on a querying service to check the status of payments with partner payment gateways
 \end{tightemize}
 \sectionsep
 
-\workplace{Insticator}{Jan 2020 – Apr 2020}\\
-\color{myyellow}\position{Backend Developer}{Kitchener, ON}
-\vspace{0.9em} % Hacky fix for awkward extra vertical space
+\workplace{Insticator}{Jan 2020 – Apr 2020} \\
+\position{Backend Developer}{Waterloo, ON}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Refactored processing of exceptionally large CSV files (1,000,000+ entries) using streaming libraries to increase performance and avoid memory exceptions
-\item Created a new maven repository to integrate slack and business exceptions for faster reporting of issues to the engineering team
-\item Integrated multiple third party SSP reporting APIs to support the teams revenue reporting process
+\item Developed tooling in the form of a maven repository to expedite reporting of business exceptions
+\item Integrated multiple third party RESTful APIs to our existing Play Framework Java Backend
+\item Developed proof of concept for processing of exceptionally large CSV files using streaming libraries to optimize run time by over 100\% 
+\item Regularly pushed new features and bug-fixes to production environment with tight deadlines
 \end{tightemize}
 \sectionsep
 
@@ -134,8 +68,9 @@ Object-Oriented Programming\\
 \position{Software Developer}{Waterloo, ON}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Reduced web page loading times by implementing pagination and optimizing number of API calls 
-\item Implemented querying logic on very large datasets with a focus on effeciency
+\item Modernized legacy APIs to RESTful ones so they could be integrated with our new web application
+\item Improved page render times by optimizing existing API calls
+\item Implemented complex SQL queries on very large datasets with a focus on efficiency 
 \item  Increased test coverage by 20\% by structuring and implementing a new unit testing library
 \end{tightemize}
 \sectionsep
@@ -150,8 +85,24 @@ Object-Oriented Programming\\
 
 \runsubsection{Image Repository}
 \descript{}
-Created a spring application that can upload, download and search for images on an AWS S3 bucket
-\sectionsep 
+Created a spring application that can upload, download and search for images on an AWS (Amazon Web Services) S3 bucket
+
+\runsubsection{Database Systems Project}
+\descript{}
+Designed a MySQL database which can be queried using a Python CLI for an internet traffic dataset from Kaggle
+
+\runsubsection{Operating Systems Project}
+\descript{}
+Designed and implemented a small Real-Time Executive for an ARM based Intel board (C and Assembly)\\
+
+\runsubsection{Conways Game of Life}
+\descript{}
+Simple implementation of Conways Game of Life as an exercise to learn Javascript
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
