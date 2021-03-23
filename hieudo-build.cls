@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.1cm, vmargin=1.1cm]{geometry}
+\usepackage[hmargin=0.9cm, vmargin=0.7cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -25,6 +25,7 @@
 \definecolor{date}{RGB}{191, 192, 192} 
 %\definecolor{date}{RGB}{191, 192, 192}
 \definecolor{primary}{RGB}{45, 49, 66}
+\definecolor{slanted}{RGB}{45, 49, 66}
 %\definecolor{primary}{RGB}{45, 49, 66}
 \definecolor{headings}{RGB}{79, 93, 117}
 %\definecolor{headings}{RGB}{45, 49, 66}
@@ -56,6 +57,9 @@
 % Headings command
 \titleformat{\section}{\color{headings}
 \scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{18pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
+
+\newcommand{\slanted}[1]{\color{subheadings}
+\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-LigIta}\fontsize{11pt}{11pt}\selectfont\bfseries {#1} \normalfont}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
